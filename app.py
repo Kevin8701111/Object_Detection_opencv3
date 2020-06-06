@@ -3,7 +3,6 @@ import time
 import subprocess
 import pymongo
 myclient = pymongo.MongoClient('mongodb://kevin87011111:<password>@cluster0-shard-00-00-b9pzv.gcp.mongodb.net:27017,cluster0-shard-00-01-b9pzv.gcp.mongodb.net:27017,cluster0-shard-00-02-b9pzv.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority')
-myclient = pymongo.MongoClient("mongodb://kevin87011111:asdf41207@cluster0-shard-00-00-b9pzv.gcp.mongodb.net:27017,cluster0-shard-00-01-b9pzv.gcp.mongodb.net:27017,cluster0-shard-00-02-b9pzv.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority")
 mydb = myclient["stream_IoT"]
 mycol = mydb["object_status"]
  
